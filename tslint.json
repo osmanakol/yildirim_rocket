@@ -1,0 +1,22 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "class-name":true,
+        "no-trailing-whitespace":false,
+        "no-empty":false,
+        "no-console":false,
+        "callable-types":true,
+        "interface-name":true,
+        "switch-final-break":true,
+        "switch-default":true,
+        "promise-function-async":true,
+        "prefer-const":true,
+        "ordered-imports":true,
+        "only-arrow-functions":true
+    },
+    "rulesDirectory": []
+}
