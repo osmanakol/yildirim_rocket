@@ -30,9 +30,11 @@ function aboutScroll() {
     if (window.pageYOffset + 700 > aboutSticky) {
         $(".aboutHead-c").css("left", "50%")
         $(".ac1, .ac2, .ac3, .ac4, .ac5").css("opacity", "1").css("margin-top", "0")
+        $(".helpus").css("transform", "scale(1)")
     } else {
         $(".aboutHead-c").css("left", "40%")
         $(".ac1, .ac2, .ac3, .ac4, .ac5").css("opacity", "0").css("margin-top", "100px")
+        $(".helpus").css("transform", "scale(0)")
     }
 }
 
