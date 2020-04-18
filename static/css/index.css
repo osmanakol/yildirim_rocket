@@ -1,0 +1,392 @@
+.wtxt {
+  color: white;
+}
+
+.padding-md {
+  padding: 120px;
+}
+
+.all-c-w {
+  font-size: 16pt;
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+}
+
+nav > .container > .nav {
+  height: 10vh;
+}
+
+.nav-item {
+  height: 100%;
+  width: 20%;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 16pt;
+  text-align: center;
+  height: 100%;
+}
+
+.nav-link p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #380438;
+}
+
+.nav-item:hover {
+  background-color: #380438;
+}
+
+.nav-item:hover .nav-link p {
+  color: white;
+}
+
+.nav-item:hover .btlogo {
+  background-color: #380438;
+  border: 5px solid #380438;
+}
+
+.navbar-brand {
+  width: 100%;
+}
+
+.btlogo {
+  width: 100%;
+  padding: 40px;
+  position: relative;
+  /* top: 35px; */
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.header {
+  width: 100%;
+  height: 90vh;
+  background-image: url("/img/sp2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header .container {
+  height: 100%;
+}
+
+.head-content-square {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  top: 10%;
+}
+
+.scName {
+  padding: 65px;
+}
+
+.aybulogo {
+  width: 10%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.stsinfo {
+  font-size: 40pt;
+}
+
+.yrtinfo {
+  font-size: 80pt;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.ybuinfo,
+.stsinfo,
+.aybulogo {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.rocketimg {
+  position: relative;
+  animation: rocket 5s forwards;
+}
+
+@keyframes rocket {
+  0% {
+    width: 44%;
+    top: -774px;
+    right: -1215px;
+    transform: rotate(-67.8deg);
+  }
+  100% {
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin-top: -45px;
+  }
+}
+
+.about,
+.project,
+.ranking,
+.pictures {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.ranking {
+  background-color: #380438;
+}
+
+.aboutHead,
+.projectHead,
+.rankingHead,
+.picHead,
+.footerHead {
+  height: 10vh;
+}
+
+.aboutHead-c,
+.projectHead-c,
+.rankingHead-c,
+.picHead-c {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+
+.aboutHead-c-List,
+.projectHead-c-List,
+.rankingHead-c-List,
+.picHead-c-List {
+  display: flex;
+}
+
+.ac1,
+.ac2,
+.ac3,
+.ac4,
+.ac5,
+.pc1,
+.pc2,
+.pc3,
+.pc4,
+.pc5,
+.rc1,
+.rc2,
+.rc3,
+.rc4,
+.rc5,
+.picc1,
+.picc2,
+.picc3,
+.picc4,
+.picc5 {
+  width: 25%;
+  height: 5px;
+  opacity: 0;
+  margin-top: 100px;
+}
+
+.ac1,
+.pc1,
+.rc1,
+.picc1 {
+  transition: 0.2s;
+}
+
+.ac2,
+.pc2,
+.rc2,
+.picc2 {
+  transition: 0.4s;
+}
+
+.ac3,
+.pc3,
+.rc3,
+.picc3 {
+  transition: 0.6s;
+}
+
+.ac4,
+.pc4,
+.rc4,
+.picc4 {
+  transition: 0.8s;
+}
+.ac5,
+.pc5,
+.rc5,
+.picc5 {
+  transition: 1s;
+}
+
+.ac1,
+.ac5,
+.pc1,
+.pc5,
+.picc1,
+.picc5 {
+  background-color: rgba(56, 3, 55, 0.3);
+}
+
+.rc1,
+.rc5 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ac2,
+.ac4,
+.pc2,
+.pc4,
+.picc2,
+.picc4 {
+  background-color: rgba(56, 3, 55, 0.6);
+}
+
+.rc2,
+.rc4 {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.ac3,
+.pc3,
+.picc3 {
+  background-color: rgba(56, 3, 55, 1);
+}
+
+.rc3 {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.aboutHead p,
+.projectHead p,
+.rankingHead p,
+.picHead p,
+.footerHead p {
+  font-size: 36pt;
+}
+
+.rankingHead p,
+.footerHead p {
+  color: white;
+}
+
+.cnt-padding {
+  padding-top: 50px;
+}
+
+.aboutimg,
+.rocketgif {
+  width: 100%;
+}
+
+.rankingimg {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pic {
+  width: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.footer {
+  width: 100%;
+  min-height: 30vh;
+  background-color: #380438;
+}
+
+.footerHead-c {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
