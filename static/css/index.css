@@ -14,6 +14,10 @@ a:hover {
   padding: 120px;
 }
 
+.padding-sm {
+  padding: 60px;
+}
+
 .all-c-w {
   font-size: 16pt;
 }
@@ -429,7 +433,7 @@ nav > .container > .nav {
 
 .footer {
   width: 100%;
-  min-height: 30vh;
+  min-height: 40vh;
   background-color: #380438;
 }
 
@@ -437,4 +441,40 @@ nav > .container > .nav {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.contact {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 30px;
+}
+
+.c-circle {
+  padding: 15px;
+  background-color: white;
+  border-radius: 50px;
+  margin: 0 10px 0 10px;
+}
+
+.c-circle i {
+  color: #380438;
+  font-size: xx-large;
+  transition: all 1s;
+}
+
+.circle-instagram:hover i {
+  transform: rotate(360deg);
+}
+
+.circle-tw:hover i {
+  transform: rotate(360deg);
+}
+
+.circle-in:hover i {
+  transform: rotate(360deg);
+}
+.circle-mail:hover i {
+  transform: rotate(360deg);
 }
