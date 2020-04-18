@@ -82,6 +82,18 @@ function picturesScroll() {
   }
 }
 
+address = 0;
+
+$(".circle-address").click(function () {
+  if (address % 2 == 0) {
+    $(".loc").css("display", "block");
+    address = address + 1;
+  } else {
+    $(".loc").css("display", "none");
+    address = address + 1;
+  }
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
