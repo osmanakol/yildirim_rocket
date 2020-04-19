@@ -3,11 +3,16 @@
   "version": "0.0.1",
   "description": "Science and Technology Society Web Site",
   "main": "app.ts",
+  "engines": {
+    "node":"12.14.0",
+    "npm":"6.14.4"
+  },
   "scripts": {
     "start": "ts-node-dev --respawn src/server.ts",
     "dev": "nodemon --exec ts-node src/server.ts",
     "build": "tsc",
-    "dev:debug": "ts-node-dev --inspect --respawn src/server.ts"
+    "dev:debug": "ts-node-dev --inspect --respawn src/server.ts",
+    "production":"node src/bin/src/server.js"
   },
   "repository": {
     "type": "git",
