@@ -1,7 +1,7 @@
 import bodyParser from "body-parser";
-import express, { Application } from "express";
+import express, { Application, Response, Request } from "express";
 import exphbs from "express-handlebars";
-import  methodOverride from "method-override";
+import methodOverride from "method-override";
 import { __static } from "../host.json";
 // Connection import
 import { ApiRoutes } from "./routes/api-routes";
@@ -13,8 +13,9 @@ class App {
         this.app = express();
         this.config();
         this.mongoSetup();
-        this.routeConfig();
         this.handlebars();
+        this.routeConfig();
+
     }
 
     private config = () => {
@@ -26,9 +27,9 @@ class App {
         this.app.use(methodOverride("_method"));
     }
 
-    private handlebars = ()=>{
+    private handlebars = () => {
         this.app.engine('handlebars', exphbs({}));
-        this.app.set('view engine','handlebars');
+        this.app.set('view engine', 'handlebars');
     }
 
     private routeConfig = () => {

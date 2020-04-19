@@ -33,8 +33,8 @@ class App {
         this.app = express_1.default();
         this.config();
         this.mongoSetup();
-        this.routeConfig();
         this.handlebars();
+        this.routeConfig();
     }
 }
 exports.default = new App().app;

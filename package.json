@@ -11,8 +11,8 @@
     "start": "npm run serve",
     "dev": "nodemon --exec ts-node src/server.ts",
     "dev:debug": "ts-node-dev --inspect --respawn src/server.ts",
-    "production": "node src/bin/src/server.js",
-    "serve": "node src/bin/src/server.js"
+    "production": "node dist/src/server.js",
+    "serve": "node dist/src/server.js"
   },
   "repository": {
     "type": "git",
