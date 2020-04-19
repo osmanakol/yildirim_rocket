@@ -8,8 +8,6 @@ const express_1 = __importDefault(require("express"));
 const express_handlebars_1 = __importDefault(require("express-handlebars"));
 const method_override_1 = __importDefault(require("method-override"));
 const host_json_1 = require("../host.json");
-// Connection import
-const api_routes_1 = require("./routes/api-routes");
 class App {
     constructor() {
         this.config = () => {
@@ -25,7 +23,12 @@ class App {
             this.app.set('view engine', 'handlebars');
         };
         this.routeConfig = () => {
-            this.app.use('/api', new api_routes_1.ApiRoutes(this.app).Routes);
+            this.app.get('/', (req, res) => {
+                res.json({
+                    status: "Api Its Working",
+                    message: "YAVVŞAAQQQ Oşan"
+                });
+            });
         };
         this.mongoSetup = () => {
             // Mongo Setup
