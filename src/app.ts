@@ -15,7 +15,7 @@ class App {
         this.mongoSetup();
         this.handlebars();
         this.routeConfig();
-
+       
     }
 
     private config = () => {
@@ -33,14 +33,7 @@ class App {
     }
 
     private routeConfig = () => {
-        this.app.get('/', (req: Request, res: Response) => {
-
-
-            res.json({
-                status: "Api Its Working",
-                message: "YAVVŞAAQQQ Oşan"
-            });
-        })
+       this.app.use('/api', new ApiRoutes(this.app).Routes)
     }
 
     private mongoSetup = () => {
