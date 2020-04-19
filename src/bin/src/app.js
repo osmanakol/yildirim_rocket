@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const body_parser_1 = __importDefault(require("body-parser"));
 const express_1 = __importDefault(require("express"));
 const express_handlebars_1 = __importDefault(require("express-handlebars"));
+const method_override_1 = __importDefault(require("method-override"));
 const host_json_1 = require("../host.json");
 // Connection import
 const api_routes_1 = require("./routes/api-routes");
@@ -17,6 +18,7 @@ class App {
             this.app.use(body_parser_1.default.urlencoded({
                 extended: true
             }));
+            this.app.use(method_override_1.default("_method"));
         };
         this.handlebars = () => {
             this.app.engine('handlebars', express_handlebars_1.default({}));

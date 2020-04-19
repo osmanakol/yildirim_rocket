@@ -1,6 +1,7 @@
 import bodyParser from "body-parser";
 import express, { Application } from "express";
 import exphbs from "express-handlebars";
+import  methodOverride from "method-override";
 import { __static } from "../host.json";
 // Connection import
 import { ApiRoutes } from "./routes/api-routes";
@@ -22,6 +23,7 @@ class App {
         this.app.use(bodyParser.urlencoded({
             extended: true
         }));
+        this.app.use(methodOverride("_method"));
     }
 
     private handlebars = ()=>{
