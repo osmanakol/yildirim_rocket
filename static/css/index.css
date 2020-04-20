@@ -711,6 +711,7 @@ pt {
 }
 
 @media screen and (max-height: 757px) and (max-width: 992px) {
+  
   .ybuinfo {
     font-size: 1.6rem;
   }
