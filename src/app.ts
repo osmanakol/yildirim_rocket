@@ -2,7 +2,7 @@ import bodyParser from "body-parser";
 import express, { Application, Response, Request } from "express";
 import exphbs from "express-handlebars";
 import methodOverride from "method-override";
-import { __static } from "../host.json";
+import {host, __static } from "../host.json";
 // Connection import
 import { ApiRoutes } from "./routes/api-routes";
 
@@ -15,7 +15,10 @@ class App {
         this.mongoSetup();
         this.handlebars();
         this.routeConfig();
-
+        const port2 = process.env.PORT || 3003;
+        this.app.listen(port2, () => {
+            console.log(`Server is working, http://${host}:${port2}/`)
+        });
     }
 
     private config = () => {
@@ -25,7 +28,7 @@ class App {
         this.app.use(bodyParser.urlencoded({
             extended: true
         }));
-      
+
     }
 
     private handlebars = () => {
@@ -42,13 +45,14 @@ class App {
             })
         })
         this.app.use('/', api)
-       
+
 
     }
 
     private mongoSetup = () => {
         // Mongo Setup
     }
+
 }
 
 export default new App().app;

@@ -42,6 +42,10 @@ class App {
         this.mongoSetup();
         this.handlebars();
         this.routeConfig();
+        const port2 = process.env.PORT || 3003;
+        this.app.listen(port2, () => {
+            console.log(`Server is working, http://${host_json_1.host}:${port2}/`);
+        });
     }
 }
 exports.default = new App().app;
