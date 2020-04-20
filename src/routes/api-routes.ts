@@ -8,7 +8,7 @@ export class ApiRoutes{
 
     public Routes = ()=>{
          
-        this.router.route('/').get((req:Request,res:Response)=>{
+        return this.router.route('/').get((req:Request,res:Response)=>{
             res.render('site/index');
             // res.json({
             //     status:"Api Its Working",
