@@ -4,7 +4,7 @@ class ApiRoutes {
     constructor(router) {
         this.router = router;
         this.Routes = () => {
-            this.router.route('/').get((req, res) => {
+            return this.router.route('/').get((req, res) => {
                 res.render('site/index');
                 // res.json({
                 //     status:"Api Its Working",

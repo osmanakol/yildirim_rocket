@@ -20,11 +20,12 @@ class App {
 
     private config = () => {
         this.app.use(express.static(__static));
+        this.app.use(methodOverride("_method"));
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({
             extended: true
         }));
-        this.app.use(methodOverride("_method"));
+      
     }
 
     private handlebars = () => {
@@ -33,13 +34,15 @@ class App {
     }
 
     private routeConfig = () => {
-        //    this.app.use('/api', new ApiRoutes(this.app).Routes)
-        this.app.get('/', (req: Request, res: Response) => {
+        const api = new ApiRoutes(this.app).Routes;
+        this.app.get('/api', (req: Request, res: Response) => {
             res.json({
                 status: "Api Its Working",
                 message: "YAVVŞAAQQQ Oşan"
             })
         })
+        this.app.use('/', api)
+       
 
     }
 
