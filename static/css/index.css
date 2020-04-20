@@ -91,6 +91,10 @@ pt {
   width: 100%;
 }
 
+.mNav {
+  display: none;
+}
+
 .btlogo {
   width: 100%;
   padding: 40px;
@@ -488,12 +492,10 @@ pt {
 }
 
 .loc {
-  width: 455px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 250px;
-  border: 8px solid rgba(0, 0, 0, 0.55);
-  box-shadow: 0 50px 20px 0 rgba(0, 0, 0, 0.5);
+  height: 100%;
   margin-top: 30px;
   display: none;
 }
@@ -501,6 +503,7 @@ pt {
 .loc iframe {
   width: 100%;
   height: 100%;
+  border: 5px solid;
 }
 
 .loc p {
@@ -590,5 +593,57 @@ pt {
 
   .rocketimg {
     padding-top: 75px;
+  }
+}
+
+@media screen and (max-width: 494px) {
+  .ybuinfo,
+  .stsinfo,
+  .yrtinfo {
+    margin-top: 45px;
+  }
+
+  .ybuinfo {
+    font-size: 18pt;
+  }
+
+  .stsinfo {
+    font-size: 25pt;
+  }
+
+  .yrtinfo {
+    font-size: 34pt;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .ybuinfo,
+  .stsinfo,
+  .yrtinfo {
+    margin-top: 45px;
+  }
+
+  .ybuinfo {
+    font-size: 14px;
+  }
+
+  .stsinfo {
+    font-size: 20pt;
+  }
+
+  .yrtinfo {
+    font-size: 30pt;
+  }
+
+  .footerHead p {
+    font-size: 25pt;
+  }
+
+  .c-circle {
+    padding: 10px;
+  }
+
+  .c-circle i {
+    font-size: large;
   }
 }
