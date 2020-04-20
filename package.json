@@ -4,11 +4,11 @@
   "description": "Science and Technology Society Web Site",
   "main": "server.ts",
   "engines": {
-    "node": "12.14.0",
+    "node": "13.13.0",
     "npm": "6.14.4"
   },
   "scripts": {
-    "start": "node dist/src/server.js",
+    "start": "ts-node src/server.ts",
     "dev": "nodemon --exec ts-node src/server.ts",
     "dev:debug": "ts-node-dev --inspect --respawn src/server.ts",
     "production": "ts-node src/server.ts",
