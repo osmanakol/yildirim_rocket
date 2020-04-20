@@ -94,6 +94,19 @@ $(".circle-address").click(function () {
   }
 });
 
+mNavButton = 0
+
+$(".mNav").click(function () {
+  if (mNavButton % 2 == 0) {
+    $(".mainNav").css("margin-top", "unset")
+    document.getElementById("mNav").innerHTML = "X"
+  } else {
+    $(".mainNav").css("margin-top", "-364px")
+    document.getElementById("mNav").innerHTML = "MENÜ"
+  }
+  mNavButton = mNavButton + 1
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

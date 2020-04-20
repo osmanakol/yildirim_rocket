@@ -49,7 +49,7 @@ pt {
   width: 100%;
 }
 
-nav > .container > .nav {
+.mainNav > .container > .nav {
   height: 10vh;
 }
 
@@ -61,23 +61,24 @@ nav > .container > .nav {
 .nav-link {
   font-weight: 400;
   font-size: 16pt;
+  display: flex;
+  justify-content: center;
   text-align: center;
   height: 100%;
 }
 
-.nav-link p {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.nav-link pt {
   color: #380438;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item:hover {
   background-color: #380438;
 }
 
-.nav-item:hover .nav-link p {
+.nav-item:hover .nav-link pt {
   color: white;
 }
 
@@ -332,6 +333,7 @@ nav > .container > .nav {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .pic {
@@ -445,11 +447,12 @@ nav > .container > .nav {
 
 .contact {
   display: flex;
+  justify-content: center;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   padding-top: 30px;
-  width: 35%;
+  width: 100%;
 }
 
 .c-circle {
@@ -503,4 +506,89 @@ nav > .container > .nav {
 .loc p {
   color: white;
   font-size: 16pt;
+}
+
+@media screen and (max-width: 992px) {
+  .btlogo {
+    padding: 10px;
+  }
+
+  .yrtinfo {
+    font-size: 55pt;
+  }
+
+  .col-sm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding-md {
+    padding: 60px 10px 60px 10px;
+  }
+
+  .mainNav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    margin-top: -364px;
+    transition: all 0.5s;
+  }
+
+  .mNav {
+    width: 50%;
+    height: 30%;
+    background-color: #380438;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22pt;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .mainNav > .container > .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: unset;
+    padding: 10px 0;
+  }
+
+  .nav-link pt {
+    font-size: 20pt;
+    padding: 15px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .ybuinfo,
+  .stsinfo,
+  .yrtinfo {
+    margin-top: 20px;
+  }
+
+  .stsinfo {
+    font-size: 33pt;
+  }
+
+  .yrtinfo {
+    font-size: 40pt;
+  }
+
+  .rocketimg {
+    padding-top: 75px;
+  }
 }
