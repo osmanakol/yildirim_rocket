@@ -43,7 +43,7 @@ class App {
         this.handlebars();
         this.routeConfig();
         const port2 = process.env.PORT || 3003;
-        this.app.listen(port2, () => {
+        this.app.listen(3003, () => {
             console.log(`Server is working, http://${host_json_1.host}:${port2}/`);
         });
     }
