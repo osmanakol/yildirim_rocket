@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .wtxt {
   color: white;
 }
@@ -83,6 +87,10 @@ pt {
   color: white;
 }
 
+.nav > .nav-item:nth-child(3) {
+  background-color: #380438;
+}
+
 .nav-item:hover .btlogo {
   background-color: #380438;
   border: 5px solid #380438;
@@ -90,6 +98,9 @@ pt {
 
 .navbar-brand {
   width: 100%;
+  background-color: #380438;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .mNav {
@@ -105,7 +116,7 @@ pt {
   top: 80px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 5px solid white;
+  background-color: #380438;
 }
 
 .header {
@@ -711,7 +722,6 @@ pt {
 }
 
 @media screen and (max-height: 757px) and (max-width: 992px) {
-  
   .ybuinfo {
     font-size: 1.6rem;
   }
@@ -794,7 +804,6 @@ pt {
     font-size: 27pt;
   }
 }
-
 
 /* @media screen and (max-height: 608px) {
   .btlogo {
