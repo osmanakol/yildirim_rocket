@@ -12,7 +12,7 @@
     "build":"tsc --build tsconfig.json",
     "dev": "nodemon --exec ts-node src/server.ts",
     "dev:debug": "ts-node-dev --inspect --respawn src/app.ts",
-    "production": "ts-node src/server.ts",
+    "production": "ts-node src/server.ts"
   },
   "repository": {
     "type": "git",
