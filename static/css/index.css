@@ -523,6 +523,16 @@ pt {
   font-size: 16pt;
 }
 
+@media screen and (max-width: 1200px) {
+  .stsinfo {
+    font-size: 35pt;
+  }
+
+  .yrtinfo {
+    font-size: 65pt;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .btlogo {
     padding: 10px;
@@ -805,7 +815,7 @@ pt {
   }
 }
 
-/* @media screen and (max-height: 608px) {
+@media screen and (max-height: 680px) {
   .btlogo {
     top: 55px;
     padding: 50px;
@@ -822,15 +832,22 @@ pt {
   .stsinfo {
     font-size: 34pt;
   }
+
   .yrtinfo {
     font-size: 59pt;
+  }
+
+  .ybuinfo,
+  .stsinfo,
+  .yrtinfo {
+    margin-bottom: 0rem;
   }
 
   .btlogo {
     top: 55px;
     padding: 50px;
   }
-} */
+}
 
 @media screen and (max-height: 680px) and (max-width: 1200px) {
   .ybuinfo {
@@ -858,10 +875,10 @@ pt {
   }
 
   .stsinfo {
-    font-size: 16pt;
+    font-size: 24pt;
   }
   .yrtinfo {
-    font-size: 19pt;
+    font-size: 30pt;
   }
 }
 
@@ -871,5 +888,40 @@ pt {
   }
   .yrtinfo {
     font-size: 23pt;
+  }
+}
+
+@media screen and (max-height: 562px) {
+  .stsinfo {
+    font-size: 30pt;
+  }
+
+  .yrtinfo {
+    font-size: 45pt;
+  }
+}
+
+
+@media screen and (max-height: 562px) and (max-width: 767px) {
+  .stsinfo {
+    font-size: 16pt;
+  }
+
+  .yrtinfo {
+    font-size: 26pt;
+  }
+}
+
+@media screen and (max-height: 440px) {
+  .ybuinfo {
+    display: none;
+  }
+
+  .stsinfo {
+    font-size: 27pt;
+  }
+
+  .yrtinfo {
+    font-size: 40pt;
   }
 }
