@@ -150,12 +150,16 @@ pt {
   transform: translateX(-50%);
 }
 
+.ybuinfo {
+  font-size: 1vw;
+}
+
 .stsinfo {
-  font-size: 40pt;
+  font-size: 2vw;
 }
 
 .yrtinfo {
-  font-size: 80pt;
+  font-size: 6vw;
   transform: scale(0);
   opacity: 0;
   transition: all 1s;
@@ -523,7 +527,64 @@ pt {
   font-size: 16pt;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
+  .padding-md {
+    padding: 60px 10px 60px 10px;
+  }
+
+  .mainNav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    margin-top: -364px;
+    transition: all 0.5s;
+  }
+
+  .mNav {
+    width: 50%;
+    height: 25%;
+    background-color: #380438;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22pt;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .mainNav > .container > .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: unset;
+    padding: 10px 0;
+  }
+
+  .nav-link pt {
+    font-size: 20pt;
+    padding: 15px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .header {
+    height: 100vh;
+  }
+}
+
+/* @media screen and (max-width: 1200px) { 
   .stsinfo {
     font-size: 35pt;
   }
@@ -924,4 +985,4 @@ pt {
   .yrtinfo {
     font-size: 40pt;
   }
-}
+} */
