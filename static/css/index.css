@@ -584,9 +584,13 @@ pt {
   }
 }
 
-/* @media screen and (max-width: 1200px) { 
+@media screen and (max-width: 1200px) { 
+   .ybuinfo {
+    font-size: 18pt;
+  }
+
   .stsinfo {
-    font-size: 35pt;
+    font-size: 45pt;
   }
 
   .yrtinfo {
@@ -595,12 +599,17 @@ pt {
 }
 
 @media screen and (max-width: 992px) {
+
+   .ybuinfo {
+    font-size: 18pt;
+  }
+  
   .btlogo {
-    padding: 10px;
+    padding: 20px;
   }
 
   .yrtinfo {
-    font-size: 55pt;
+    font-size: 45pt;
   }
 
   .col-sm {
@@ -747,9 +756,9 @@ pt {
   }
 }
 
-@media screen and (max-height: 817px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .ybuinfo {
-    font-size: 1.3rem;
+   font-size:15pt;
   }
 
   .stsinfo {
@@ -757,7 +766,8 @@ pt {
   }
 
   .yrtinfo {
-    font-size: 41pt;
+    font-size: 40pt;
+   
   }
 }
 
@@ -818,7 +828,7 @@ pt {
   }
 }
 
-@media screen and (max-height: 757px) and (max-width: 494px) {
+@media screen and (max-width: 494px) {
   .ybuinfo {
     font-size: 1rem;
   }
@@ -837,7 +847,7 @@ pt {
   }
 }
 
-@media screen and (max-height: 730px) and (max-width: 992px) {
+@media screen a and (max-width: 992px) {
   .ybuinfo {
     font-size: 1.6rem;
   }
@@ -875,6 +885,7 @@ pt {
     font-size: 27pt;
   }
 }
+
 
 @media screen and (max-height: 680px) {
   .btlogo {
@@ -927,6 +938,7 @@ pt {
   .btlogo {
     top: 50px;
     padding: 15px;
+  
   }
 }
 
@@ -944,11 +956,15 @@ pt {
 }
 
 @media screen and (max-height: 680px) and (max-width: 390px) {
+  .ybuinfo{
+    font-size:15px
+  }
+
   .stsinfo {
-    font-size: 19pt;
+    font-size: 13pt;
   }
   .yrtinfo {
-    font-size: 23pt;
+    font-size: 15pt;
   }
 }
 
@@ -985,4 +1001,21 @@ pt {
   .yrtinfo {
     font-size: 40pt;
   }
-} */
+}
+
+@media screen and (max-height: 440px) {
+  .ybuinfo {
+    display: none;
+  }
+
+  .stsinfo {
+    font-size: 27pt;
+  }
+
+  .yrtinfo {
+    font-size: 40pt;
+  }
+}
+
+
+}
