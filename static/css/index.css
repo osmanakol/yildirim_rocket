@@ -584,19 +584,23 @@ pt {
   }
 }
 
-/* @media screen and (max-width: 1200px) { 
+ @media screen and (max-width: 1200px) { 
   .stsinfo {
-    font-size: 35pt;
+    font-size: 20pt;
+    max-height:200px;
+    max-width:500px;
   }
 
   .yrtinfo {
-    font-size: 65pt;
+    font-size: 45pt;
   }
 }
 
 @media screen and (max-width: 992px) {
   .btlogo {
     padding: 10px;
+
+
   }
 
   .yrtinfo {
@@ -611,6 +615,7 @@ pt {
 @media screen and (max-width: 768px) {
   .padding-md {
     padding: 60px 10px 60px 10px;
+    
   }
 
   .mainNav {
@@ -712,6 +717,7 @@ pt {
 
   .ybuinfo {
     font-size: 14px;
+    max-width:54px
   }
 
   .stsinfo {
@@ -738,18 +744,25 @@ pt {
 @media screen and (max-height: 817px) {
   .yrtinfo {
     font-size: 75pt;
+    max-height:170px;
+    max-width:fit-content;
   }
 }
 
 @media screen and (max-height: 817px) and (max-width: 992px) {
   .yrtinfo {
     font-size: 55pt;
+    max-height:155px;
+    margin-top:auto;
+    margin-left:auto;
+    max-width:1545px
   }
 }
 
 @media screen and (max-height: 817px) and (max-width: 768px) {
   .ybuinfo {
     font-size: 1.3rem;
+    
   }
 
   .stsinfo {
@@ -985,4 +998,4 @@ pt {
   .yrtinfo {
     font-size: 40pt;
   }
-} */
+} 
