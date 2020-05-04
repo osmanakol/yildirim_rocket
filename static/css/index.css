@@ -91,10 +91,10 @@ pt {
   background-color: #380438;
 }
 
-.nav-item:hover .btlogo {
+/* .nav-item:hover .btlogo {
   background-color: #380438;
   border: 5px solid #380438;
-}
+} */
 
 .navbar-brand {
   width: 100%;
@@ -107,6 +107,12 @@ pt {
   display: none;
 }
 
+.nav-logo {
+  height: 175px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
 .btlogo {
   width: 100%;
   padding: 40px;
@@ -115,8 +121,7 @@ pt {
   left: 50%;
   top: 80px;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background-color: #380438;
+  background-color: transparent;
 }
 
 .header {
@@ -140,7 +145,7 @@ pt {
 }
 
 .scName {
-  padding: 65px;
+  padding-top: 65px;
 }
 
 .aybulogo {
@@ -151,15 +156,15 @@ pt {
 }
 
 .ybuinfo {
-  font-size: 1vw;
+  font-size: calc(0.5rem + 2.5vmin);
 }
 
 .stsinfo {
-  font-size: 2vw;
+  font-size: calc(1.5rem + 3.5vmin);
 }
 
 .yrtinfo {
-  font-size: 6vw;
+  font-size: calc(2.5rem + 7.5vmin);
   transform: scale(0);
   opacity: 0;
   transition: all 1s;
@@ -527,70 +532,27 @@ pt {
   font-size: 16pt;
 }
 
-@media screen and (max-width: 768px) {
-  .padding-md {
-    padding: 60px 10px 60px 10px;
-  }
-
-  .mainNav {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 2;
-    margin-top: -364px;
-    transition: all 0.5s;
-  }
-
-  .mNav {
-    width: 50%;
-    height: 25%;
-    background-color: #380438;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 22pt;
-    color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    cursor: pointer;
-  }
-
-  .mainNav > .container > .nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: unset;
-    padding: 10px 0;
-  }
-
-  .nav-link pt {
-    font-size: 20pt;
-    padding: 15px;
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
+@media screen and (max-height: 550px) {
   .nav-logo {
-    display: none;
+    height: 150px;
   }
 
-  .header {
-    height: 100vh;
+  .btlogo {
+    top: 70px;
   }
-}
 
-/* @media screen and (max-width: 1200px) { 
   .stsinfo {
-    font-size: 35pt;
+    font-size: calc(1.5rem + 2.5vmin);
   }
 
   .yrtinfo {
-    font-size: 65pt;
+    font-size: calc(2.5rem + 4.5vmin);
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 720px) {
+  .yrtinfo {
+    font-size: calc(2.5rem + 5.5vmin);
   }
 }
 
@@ -600,19 +562,12 @@ pt {
   }
 
   .yrtinfo {
-    font-size: 55pt;
+    font-size: calc(2.5rem + 5.5vmin);
   }
 
   .col-sm {
     display: none;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .padding-md {
-    padding: 60px 10px 60px 10px;
-  }
-
   .mainNav {
     position: fixed;
     width: 100%;
@@ -663,65 +618,61 @@ pt {
   .header {
     height: 100vh;
   }
+}
 
-  .ybuinfo,
-  .stsinfo,
-  .yrtinfo {
-    margin-top: 20px;
+@media screen and (max-width: 992px) and (max-height: 490px) {
+  .mNav {
+    height: 15%;
   }
 
+  .scName {
+    padding-top: 45px;
+  }
+
+  .yrtinfo {
+    font-size: calc(2.5rem + 4.5vmin);
+  }
+}
+
+@media screen and (max-width: 992px) and (max-height: 320px) {
   .stsinfo {
-    font-size: 33pt;
+    font-size: calc(1.5rem + 1.5vmin);
   }
 
   .yrtinfo {
-    font-size: 40pt;
+    font-size: calc(2.5rem + -0.5vmin);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding-md {
+    padding: 60px 10px 60px 10px;
   }
 
-  .rocketimg {
-    padding-top: 75px;
+  .yrtinfo {
+    font-size: calc(2.5rem + 4.5vmin);
+  }
+}
+
+@media screen and (max-width: 768px) and (max-height: 460px) {
+  .yrtinfo {
+    font-size: calc(2.5rem + 2.5vmin);
+  }
+}
+
+@media screen and (max-width: 768px) and (max-height: 370px) {
+  .yrtinfo {
+    font-size: calc(2.5rem + 1.5vmin);
+  }
+}
+
+@media screen and (max-width: 500px) and (max-height: 370px) {
+  .yrtinfo {
+    font-size: calc(2.5rem + 0.5vmin);
   }
 }
 
 @media screen and (max-width: 494px) {
-  .ybuinfo,
-  .stsinfo,
-  .yrtinfo {
-    margin-top: 45px;
-  }
-
-  .ybuinfo {
-    font-size: 18pt;
-  }
-
-  .stsinfo {
-    font-size: 25pt;
-  }
-
-  .yrtinfo {
-    font-size: 34pt;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .ybuinfo,
-  .stsinfo,
-  .yrtinfo {
-    margin-top: 45px;
-  }
-
-  .ybuinfo {
-    font-size: 14px;
-  }
-
-  .stsinfo {
-    font-size: 20pt;
-  }
-
-  .yrtinfo {
-    font-size: 30pt;
-  }
-
   .footerHead p {
     font-size: 25pt;
   }
@@ -735,254 +686,90 @@ pt {
   }
 }
 
-@media screen and (max-height: 817px) {
+@media screen and (max-width: 494px) and (max-height: 370px) {
   .yrtinfo {
-    font-size: 75pt;
+    font-size: calc(2.5rem + -1.5vmin);
   }
 }
 
-@media screen and (max-height: 817px) and (max-width: 992px) {
+@media screen and (max-width: 402px) and (max-height: 595px) {
   .yrtinfo {
-    font-size: 55pt;
+    font-size: calc(2.5rem + 3.5vmin);
   }
 }
 
-@media screen and (max-height: 817px) and (max-width: 768px) {
-  .ybuinfo {
-    font-size: 1.3rem;
-  }
-
+@media screen and (max-width: 402px) and (max-height: 430px) {
   .stsinfo {
-    font-size: 30pt;
+    font-size: calc(1.5rem + 1.5vmin);
   }
 
   .yrtinfo {
-    font-size: 41pt;
+    font-size: calc(2.5rem + 0.5vmin);
   }
 }
 
-@media screen and (max-height: 817px) and (max-width: 494px) {
-  .ybuinfo {
-    font-size: 1rem;
-  }
-
+@media screen and (max-width: 402px) and (max-height: 320px) {
   .stsinfo {
-    font-size: 27pt;
+    font-size: calc(1.5rem + 0.5vmin);
   }
 
   .yrtinfo {
-    font-size: 32pt;
+    font-size: calc(2.5rem + -3.5vmin);
   }
 }
 
-@media screen and (max-height: 757px) {
-  .btlogo {
-    top: 70px;
+@media screen and (max-width: 370px) and (max-height: 550px) {
+  .yrtinfo {
+    font-size: calc(2.5rem + 0.5vmin);
   }
+}
 
-  .ybuinfo {
-    font-size: 1.8rem;
-  }
-
+@media screen and (max-width: 370px) and (max-height: 325px) {
   .stsinfo {
-    font-size: 38pt;
+    font-size: calc(1.5rem + 0.5vmin);
   }
+
   .yrtinfo {
-    font-size: 70pt;
+    font-size: calc(2.5rem + -3.3vmin);
   }
 }
 
-@media screen and (max-height: 757px) and (max-width: 992px) {
-  .ybuinfo {
-    font-size: 1.6rem;
-  }
-
+@media screen and (max-width: 296px) and (max-height: 450px) {
   .stsinfo {
-    font-size: 36pt;
+    font-size: calc(1.5rem + 0.5vmin);
   }
+
   .yrtinfo {
-    font-size: 55pt;
+    font-size: calc(2.5rem + -0.3vmin);
   }
 }
 
-@media screen and (max-height: 757px) and (max-width: 768px) {
-  .ybuinfo {
-    font-size: 1.2rem;
-  }
-
+@media screen and (max-width: 296px) and (max-height: 370px) {
   .stsinfo {
-    font-size: 32pt;
+    font-size: calc(1.5rem + -0.5vmin);
   }
+
   .yrtinfo {
-    font-size: 42pt;
+    font-size: calc(2.5rem + -3.5vmin);
   }
 }
 
-@media screen and (max-height: 757px) and (max-width: 494px) {
-  .ybuinfo {
-    font-size: 1rem;
-  }
-
+@media screen and (max-width: 296px) and (max-height: 270px) {
   .stsinfo {
-    font-size: 23pt;
+    font-size: calc(1.5rem + -1.5vmin);
   }
+
   .yrtinfo {
-    font-size: 27pt;
+    font-size: calc(2.5rem + -6.5vmin);
   }
 }
 
-@media screen and (max-height: 730px) {
-  .yrtinfo {
-    font-size: 67pt;
-  }
-}
-
-@media screen and (max-height: 730px) and (max-width: 992px) {
-  .ybuinfo {
-    font-size: 1.6rem;
-  }
-
+@media screen and (max-width: 276px) and (max-height: 4200px) {
   .stsinfo {
-    font-size: 36pt;
+    font-size: calc(1.5rem + -.5vmin);
   }
+
   .yrtinfo {
-    font-size: 55pt;
+    font-size: calc(2.5rem + -1.5vmin);
   }
 }
-
-@media screen and (max-height: 730px) and (max-width: 768px) {
-  .ybuinfo {
-    font-size: 1.2rem;
-  }
-
-  .stsinfo {
-    font-size: 32pt;
-  }
-  .yrtinfo {
-    font-size: 42pt;
-  }
-}
-
-@media screen and (max-height: 730px) and (max-width: 494px) {
-  .ybuinfo {
-    font-size: 1rem;
-  }
-
-  .stsinfo {
-    font-size: 23pt;
-  }
-  .yrtinfo {
-    font-size: 27pt;
-  }
-}
-
-@media screen and (max-height: 680px) {
-  .btlogo {
-    top: 55px;
-    padding: 50px;
-  }
-
-  .scName {
-    padding: 88px;
-  }
-
-  .ybuinfo {
-    font-size: 1.5rem;
-  }
-
-  .stsinfo {
-    font-size: 34pt;
-  }
-
-  .yrtinfo {
-    font-size: 59pt;
-  }
-
-  .ybuinfo,
-  .stsinfo,
-  .yrtinfo {
-    margin-bottom: 0rem;
-  }
-
-  .btlogo {
-    top: 55px;
-    padding: 50px;
-  }
-}
-
-@media screen and (max-height: 680px) and (max-width: 1200px) {
-  .ybuinfo {
-    font-size: 1rem;
-  }
-
-  .stsinfo {
-    font-size: 30pt;
-  }
-  .yrtinfo {
-    font-size: 36pt;
-  }
-}
-
-@media screen and (max-height: 680px) and (max-width: 992px) {
-  .btlogo {
-    top: 50px;
-    padding: 15px;
-  }
-}
-
-@media screen and (max-height: 680px) and (max-width: 767px) {
-  .ybuinfo {
-    font-size: 0.6rem;
-  }
-
-  .stsinfo {
-    font-size: 24pt;
-  }
-  .yrtinfo {
-    font-size: 30pt;
-  }
-}
-
-@media screen and (max-height: 680px) and (max-width: 390px) {
-  .stsinfo {
-    font-size: 19pt;
-  }
-  .yrtinfo {
-    font-size: 23pt;
-  }
-}
-
-@media screen and (max-height: 562px) {
-  .stsinfo {
-    font-size: 30pt;
-  }
-
-  .yrtinfo {
-    font-size: 45pt;
-  }
-}
-
-
-@media screen and (max-height: 562px) and (max-width: 767px) {
-  .stsinfo {
-    font-size: 16pt;
-  }
-
-  .yrtinfo {
-    font-size: 26pt;
-  }
-}
-
-@media screen and (max-height: 440px) {
-  .ybuinfo {
-    display: none;
-  }
-
-  .stsinfo {
-    font-size: 27pt;
-  }
-
-  .yrtinfo {
-    font-size: 40pt;
-  }
-} */
